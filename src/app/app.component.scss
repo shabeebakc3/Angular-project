@@ -1,0 +1,158 @@
+$lightGray : #f1f3f4;
+$darkGray :#5f6368;
+
+.main-wrap {
+  padding-top: 10px;
+
+  @media (max-width:1200px) {
+    padding-top: 0;
+  }
+
+
+  button {
+    box-shadow: none;
+  }
+
+  .header-wrap {
+
+    .search-btn,
+    .close-btn,
+    .dropdown-btn,
+    .right-btns {
+      @media (max-width:1200px) {
+        display: none;
+      }
+    }
+
+    .search-input-wrap {
+      width: 80%;
+      height: 50px;
+
+      @media (max-width:1200px) {
+        width: 100%;
+      }
+
+      .search-btn,
+      .close-btn,
+      .dropdown-btn {
+        background: $lightGray;
+
+        i {
+          color: $darkGray;
+          font-size: 25px;
+        }
+      }
+
+      .back-icon {
+        font-size: 25px;
+      }
+
+      input {
+        background: $lightGray;
+        width: 82%;
+        outline: none;
+        color: #000000;
+
+        @media (max-width:1200px) {
+          background: #ffffff;
+        }
+      }
+    }
+
+    .right-btns {
+      padding-left: 80px;
+
+      button {
+        color: $darkGray;
+        font-size: 25px;
+      }
+    }
+  }
+
+  .border-bottom-wrap {
+    padding-top: 10px;
+    border-bottom: 1px solid #dadce0;
+
+    @media (max-width:1200px) {
+      padding-top: 0;
+    }
+  }
+
+  .search-result-section {
+
+    p {
+      font-size: 18px;
+      padding-top: 16px;
+
+      i {
+        font-size: 22px;
+        width: 80px;
+      }
+    }
+
+    .pdf-icon {
+      color: #ea4335;
+      padding-right: 15px;
+      font-size: 23px;
+      line-height: 1;
+    }
+
+    .user-icon {
+      color: #949494;
+      padding-left: 10px;
+      font-size: 15px;
+    }
+
+    .table-section {
+      table {
+        font-size: 13px;
+
+        @media (max-width:991px) {
+          font-size: 10px;
+        }
+
+        thead {
+
+          tr {
+            color: #5f6368;
+
+            th {
+              border-bottom: 1px;
+            }
+          }
+
+          @media (max-width:1200px) {
+            display: none;
+          }
+        }
+
+        tbody {
+
+          tr {
+
+            :nth-child(2),
+            :nth-child(3),
+            :nth-child(4) {
+              @media (max-width:1200px) {
+                display: none;
+              }
+            }
+
+            td {
+              vertical-align: middle;
+            }
+
+
+            .boder-none {
+              @media (max-width:1200px) {
+                border-top: 0;
+              }
+            }
+
+          }
+        }
+      }
+    }
+
+  }
+}
